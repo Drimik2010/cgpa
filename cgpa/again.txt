@@ -1,0 +1,188 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+ <script>
+function validateForm() {
+    var c1 = document.forms["cgpaForm"]["credit1"].value;
+    var c2 = document.forms["cgpaForm"]["credit2"].value;
+    var c3 = document.forms["cgpaForm"]["credit3"].value;
+    if (c1 == "") {
+        alert("Name must be filled out");
+        return false;
+       
+    }
+}
+</script> 
+
+<style>
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+</style>
+</head>
+<body>
+
+<h2>The padding Property</h2>
+<p>This property adds space between the border and the content in a table.</p>
+<form id="cgpaForm"method="post" onsubmit="return validateForm()" action="">
+<table>
+  <tr>
+    <th>Course </th>
+    <th>Course Name</th>
+    <th>Choose Your Credit</th>
+	 <th>Obtained Grade</th>
+  </tr>
+  <tr>
+  <td>1</td>
+    <td>
+	 <input type="text" class="form-control" id="usr">
+	</td>
+    <td>
+	<label for="usr">Choose Your Credit</label>
+						 <select class="form-control" name="credit1" id="">
+						 <option value="4">4</option>
+						 <option value="3">3</option>
+						 <option value="2">2</option>
+						 <option value="1.5">1.5</option>
+						 <option value="0.75">0.75</option>
+						 
+						 </select>
+	</td>
+    <td><select class="form-control"  name="grade1" id="">
+						 <option value="4.00">A+</option>
+						 <option value="3.74">A</option>
+						 <option value="3.50"> A-</option>
+						 <option value="3.25">B+</option>
+						 <option value="3.00">B</option>
+						 <option value="2.75">B-</option>
+						 <option value="2.50">C+</option>
+						 <option value="2.25">C</option>
+						  <option value="2.25">D</option>
+						  <option value="2.25">C</option>
+						  </select>
+						  </td>
+  </tr>
+  <tr>
+  <td>2</td>
+    <td>
+	 <input type="text" class="form-control" id="usr">
+	</td>
+    <td>
+	<label for="usr">Choose Your Credit</label>
+						 <select class="form-control" name="credit2" id="">
+						 <option value="4">4</option>
+						 <option value="3">3</option>
+						 <option value="2">2</option>
+						 <option value="1.5">1.5</option>
+						 <option value="0.75">0.75</option>
+						 
+						 </select>
+	</td>
+    <td><select class="form-control"  name="grade1" id="">
+						 <option value="4.00">A+</option>
+						 <option value="3.74">A</option>
+						 <option value="3.50"> A-</option>
+						 <option value="3.25">B+</option>
+						 <option value="3.00">B</option>
+						 <option value="2.75">B-</option>
+						 <option value="2.50">C+</option>
+						 <option value="2.25">C</option>
+						  <option value="2.25">D</option>
+						  <option value="2.25">C</option>
+						  </select>
+						  </td>
+  </tr>
+  <tr>
+  <td>3</td>
+    <td>
+	 <input type="text" class="form-control" id="usr">
+	</td>
+    <td>
+	<label for="usr">Choose Your Credit</label>
+						 <select class="form-control" name="credit3" id="">
+						 <option value="4">4</option>
+						 <option value="3">3</option>
+						 <option value="2">2</option>
+						 <option value="1.5">1.5</option>
+						 <option value="0.75">0.75</option>
+						 
+						 </select>
+	</td>
+    <td><select class="form-control"  name="grade1" id="">
+						 <option value="4.00">A+</option>
+						 <option value="3.74">A</option>
+						 <option value="3.50"> A-</option>
+						 <option value="3.25">B+</option>
+						 <option value="3.00">B</option>
+						 <option value="2.75">B-</option>
+						 <option value="2.50">C+</option>
+						 <option value="2.25">C</option>
+						  <option value="2.25">D</option>
+						  <option value="2.25">C</option>
+						  </select>
+						  </td>
+  </tr>
+  <tr>
+  <td>4</td>
+    <td>
+	 <input type="text" class="form-control" id="usr">
+	</td>
+    <td>
+	<label for="usr">Choose Your Credit</label>
+						 <select class="form-control" name="credit4" id="">
+						 <option value="4">4</option>
+						 <option value="3">3</option>
+						 <option value="2">2</option>
+						 <option value="1.5">1.5</option>
+						 <option value="0.75">0.75</option>
+						 
+						 </select>
+	</td>
+    <td><select  onchange="update_gp(1, this.options[this.selectedIndex].value) class="form-control"  name="grade1" id="">
+	                   <option value="" selected="selected">Select</option>
+						 <option value="4.00">A+</option>
+						 <option value="3.74">A</option>
+						 <option value="3.50"> A-</option>
+						 <option value="3.25">B+</option>
+						 <option value="3.00">B</option>
+						 <option value="2.75">B-</option>
+						 <option value="2.50">C+</option>
+						 <option value="2.25">C</option>
+						  <option value="2.25">D</option>
+						  <option value="2.25">C</option>
+						  </select>
+						  </td>
+  </tr>
+  <tr>
+  <td></td>
+  <td></td>
+  <td><input type="submit" value="Calculate Your CGPA"></td>
+  </tr>
+</table>
+
+</form>
+
+
+<script language="javascript">
+
+</script>
+
+
+</body>
+</html>
