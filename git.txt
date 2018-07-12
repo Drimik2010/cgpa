@@ -1,0 +1,17 @@
+username:  nh.limon
+password : lornlmn22
+
+
+1) git init
+2)git config user.name ""
+3 git config user.email ""
+4) git commit -m ""
+5)git remote add origin link
+6)git push origin master 
+
+status
+git status
+git log
+git add . (for all thing modification)
+then write commit 
+git commit -m "Second CommitFor Checking"
